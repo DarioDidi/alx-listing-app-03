@@ -1,5 +1,9 @@
+import BookingSection from "@/components/property/BookingSection";
+import PropertyDetail from "@/components/property/PropertyDetail";
+import ReviewSection from "@/components/property/ReviewSection";
 import { PROPERTYLISTINGSAMPLE } from "@/constants";
 import { useRouter } from "next/router";
+import CustomBackground from "@/components/common/CustomBackground";
 
 export default function PropertyPage() {
   const router = useRouter();
@@ -9,8 +13,10 @@ export default function PropertyPage() {
   if (!property) return <p>Property not found</p>
 
   return (
-    <div>
+    <CustomBackground>
       <PropertyDetail property={property} />
-    </div>
+      <BookingSection price={property.price} />
+      <ReviewSection reviews={[]} />
+    </CustomBackground>
   )
 }

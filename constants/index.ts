@@ -4,6 +4,7 @@ export const UI_TEXT = {
 
 }
 
+export const fullPage = "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
 
 import { PropertyProps } from "@/interfaces";
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [

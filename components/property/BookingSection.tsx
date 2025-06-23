@@ -1,6 +1,6 @@
 const BookingSection: React.FC<{ price: number }> = ({ price }) => {
 	return (
-		<div className="bg-white p-6 shadow-md rounded-lg">
+		<div className="bg-gray-100 p-6 shadow-md rounded-lg">
 			<h3 className="text-xl font-semibold">${price}/night</h3>
 			{/*board period*/}
 			<div className="mt-4">
