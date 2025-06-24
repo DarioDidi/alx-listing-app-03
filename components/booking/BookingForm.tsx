@@ -83,6 +83,7 @@ const BookingForm = () => {
 					<button className="mt-6 bg-green-500 text-white py-2 px-4 rounded-md w-full">
 						Confirm & Pay
 					</button>
+				</div>
 			</form>
 		</div>
 	);
